@@ -1,0 +1,263 @@
+/* ----------------- Reset CSS ----------------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    backdrop-filter: blur(30px);
+    background-image: url('./fundo.jpg');
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+    min-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(250, 250, 250, .3);
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.content {
+    /* background-color: aliceblue; */
+    max-width: 1080px;
+    padding: 40px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding: 0 15px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+li a {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+li a:visited {
+    color: #000;
+}
+
+li a:hover {
+    color: #fff;
+}
+
+
+#titulo-da-pagina{
+    font-family: "quattrocento", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.logo1{
+    color: #ebaf0b;
+}
+
+.logo2{
+    color: #794409;
+}
+
+.hero-banner {
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-banner {
+    width: 37%;
+}
+
+.text-banner > h1 {
+    margin-bottom: 25px;
+    font-family: "quattrocento", serif;
+    font-style: normal;
+    color: ebaf0b;
+}
+
+.tittle-1 {
+    font-size: 63px;
+    font-weight: 400;
+}
+
+.tittle-2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.text {
+    font-weight: 600;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.botoes > button{
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+}
+
+.btn-1 {
+    background-color: #794409;
+    border: none;
+    border-radius: 30px;    
+}
+
+.btn-2 {
+    background-color: #8f8f8f;
+    border: none;
+    border-radius: 30px;
+}
+
+.img-banner{
+    width: 58%;
+}
+
+.sec-cards {
+    /* background-color: rosybrown; */
+}
+
+.sec-cards .tittle {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.sec-cards .tittle h2 {
+    font-family: "quattrocento", serif;
+    font-size: 80px;
+    font-weight: 500;
+    color: #000;
+}
+
+.sec-cards .tittle p {
+    margin-top: -10px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+.cards {
+    padding-top: 20px;
+    /* background-color: salmon; */
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.content-cards {
+    background-color: rgba(250, 250, 250, .3);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-cards img {
+    margin-top: -20px;
+    width: 90%;
+    transition: transform 0.3s;
+}
+
+.infos {
+    /* background-color: seagreen; */
+    width: 70%;
+    margin: 0 0 20px 0;
+}
+
+.nota {
+    font-size: 20px;
+    color: #f8ac09;
+}
+
+.estrela {
+    font-size: 30px;
+}
+
+.infos > h3 {
+    font-size: 23px;
+    padding: 5px 0;
+    font-weight: 750;
+}
+
+.descricao {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.card-rodape {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.plus {
+    background-color: #bb7627;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 800;
+    padding: 0px 7px;
+    border-radius: 100px;
+}
+
+.card2 {
+    /* margin-top: -50px; */
+    width: 60%;
+}
+
+.card2 img {
+    width: 93%;
+}
+
+.card2 h3 {
+    
+    font-size: 28px;
+}
+
+.card2 p {
+    
+    font-size: 20px;
+}
+
+.card2 .card-rodape {
+    padding-top: 30px;
+}
+
+.card2 .plus {
+    padding: 0px 8px;
+}
+
+
+.content-cards:hover img {
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+}
