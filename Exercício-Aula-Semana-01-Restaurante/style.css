@@ -256,8 +256,50 @@ li a:hover {
     padding: 0px 8px;
 }
 
-
 .content-cards:hover img {
     transform: translateY(-20px);
     transition: transform 0.3s ease-in-out;
+}
+
+.destaque {
+    /* background-color: #ebaf0b; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.img-dest {
+    margin-left: -80px;
+}
+
+.text-dest > h3 {
+    padding: 10px 0;
+    font-size: 45px;
+    text-align: center;
+}
+
+.tit-dest-1 {
+    line-height: 1;
+    font-size: 36px;
+}
+
+.tit-dest-2 {
+    font-size: 63px;
+    color: #fff;
+}
+
+.tit-dest-3 {
+    color: #05cc05;
+}
+
+.tit-dest-4 {
+    color: #dd0202;
+}
+
+.text-dest > p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
 }
