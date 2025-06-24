@@ -33,7 +33,18 @@ header {
 .content {
     /* background-color: aliceblue; */
     max-width: 1080px;
-    padding: 40px;
+    padding: 40px 40px 10px;
+}
+
+.logo{
+    width: 10%;
+    position: absolute;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: end;
 }
 
 nav ul {
@@ -59,20 +70,11 @@ li a:hover {
     color: #fff;
 }
 
-
 #titulo-da-pagina{
     font-family: "quattrocento", serif;
     font-size: 30px;
     font-weight: 500;
     color: #fff;
-}
-
-.logo1{
-    color: #ebaf0b;
-}
-
-.logo2{
-    color: #794409;
 }
 
 .hero-banner {
@@ -88,24 +90,26 @@ li a:hover {
 }
 
 .text-banner > h1 {
-    margin-bottom: 25px;
-    font-family: "quattrocento", serif;
-    font-style: normal;
-    color: ebaf0b;
+    margin-bottom: 5px;
+    color: #fff;
 }
 
 .tittle-1 {
-    font-size: 63px;
-    font-weight: 400;
+    font-size: 60px;
+    font-weight: 800;
 }
 
 .tittle-2 {
-    font-size: 28px;
+    display: block;
+    margin-top: -10px;
+    font-size: 27px;
     font-weight: 700;
 }
 
 .text {
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
 }
 
 .botoes {
@@ -116,49 +120,64 @@ li a:hover {
 
 .botoes > button{
     padding: 10px 25px;
-    color: #fff;
     font-size: 15px;
     font-family: "Nunito Sans", sans-serif;
     font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    transition: color 0.2s ease-in-out, background-color .8s ease-out,  outline-offset 0.1s ease-in-out;
+}
+
+.botoes > button:hover {
+    transition: color 0.2s ease-in-out, background-color .8s ease-out,  outline-offset 0.1s ease-in-out;
 }
 
 .btn-1 {
-    background-color: #794409;
-    border: none;
-    border-radius: 30px;    
+    background-color: #0faf1c;
+    color: #053309;
+    outline: #053309 solid 3px;
+    outline-offset: 5px;
+}
+
+.btn-1:hover {
+    /* background-color: #07470c; */
+    color: #fff;
+    outline: #053309 solid 3px;
+    outline-offset: 2px;
 }
 
 .btn-2 {
-    background-color: #8f8f8f;
-    border: none;
-    border-radius: 30px;
+    background-color: #e75022;
+    color: #630d06;
+    outline: #630d06 solid 3px;
+    outline-offset: 5px;
+}
+
+.btn-2:hover {
+    /* background-color: #630d06; */
+    color: #fff;
+    outline: #630d06 solid 3px;
+    outline-offset: 2px;
 }
 
 .img-banner{
     width: 58%;
 }
 
-.sec-cards {
-    /* background-color: rosybrown; */
-}
-
 .sec-cards .tittle {
     padding: 40px 0;
     text-align: center;
+    color: #fff;
+    font-weight: 500;
 }
 
 .sec-cards .tittle h2 {
-    font-family: "quattrocento", serif;
     font-size: 80px;
-    font-weight: 500;
-    color: #000;
 }
 
 .sec-cards .tittle p {
-    margin-top: -10px;
-    font-size: 30px;
-    font-weight: 500;
-    color: #000;
+    margin-top: -25px;
+    font-size: 42px;
 }
 
 .cards {
@@ -192,8 +211,14 @@ li a:hover {
 }
 
 .nota {
+    width: 100px;
+    padding-left: 15px;
+    margin-top: 15px;
+    margin-left: -20px;
+    border-radius: 30px;
+    background-color: rgba(255, 145, 2, 0.952);
     font-size: 20px;
-    color: #f8ac09;
+    color: #f8d409;
 }
 
 .estrela {
@@ -221,12 +246,16 @@ li a:hover {
 }
 
 .plus {
-    background-color: #bb7627;
+    background-color: #2e9405;
     font-size: 18px;
     color: #fff;
     font-weight: 800;
     padding: 0px 7px;
     border-radius: 100px;
+}
+
+.card1, .card3 {
+    max-width: 290px;
 }
 
 .card2 {
@@ -277,6 +306,7 @@ li a:hover {
     padding: 10px 0;
     font-size: 45px;
     text-align: center;
+    color: #fff;
 }
 
 .tit-dest-1 {
@@ -286,15 +316,18 @@ li a:hover {
 
 .tit-dest-2 {
     font-size: 63px;
-    color: #fff;
 }
 
 .tit-dest-3 {
     color: #05cc05;
+    font-weight: 900;
 }
 
 .tit-dest-4 {
-    color: #dd0202;
+    display: block;
+    margin-top: -20px;
+    color: #ee660b;
+    font-weight: 900;
 }
 
 .text-dest > p {
@@ -302,4 +335,30 @@ li a:hover {
     font-size: 20px;
     font-weight: 400;
     color: #000;
+}
+
+.our-serv {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-footer > li {
+    display: flex;
+}
+
+.nav-footer > li > a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #000;
+}
+
+.nav-footer > li > a:hover {
+    color: #fff;
 }
