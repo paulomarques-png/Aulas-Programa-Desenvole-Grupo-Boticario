@@ -316,25 +316,38 @@ li a:hover {
 
 .tit-dest-2 {
     font-size: 63px;
+    display: block;
+    margin-top: -10px;
 }
 
 .tit-dest-3 {
+    padding-top: 15px;
     color: #05cc05;
-    font-weight: 900;
+    height: 60px;
 }
 
 .tit-dest-4 {
-    display: block;
-    margin-top: -20px;
+    margin-top: 0px;
     color: #ee660b;
+}
+
+.tit-dest-3, .tit-dest-4 {
+    display: block;
     font-weight: 900;
+    background-color: rgba(240, 248, 255, 0.795);
+    border-radius: 30px;
 }
 
 .text-dest > p {
+    padding: 0 25px 15px;
+    margin-top: -10px;
     text-align: center;
+    line-height: 1.2;
     font-size: 20px;
     font-weight: 400;
-    color: #000;
+    color: #272727;
+    background-color: rgba(240, 248, 255, 0.795);
+    border-radius: 30px;
 }
 
 .our-serv {
