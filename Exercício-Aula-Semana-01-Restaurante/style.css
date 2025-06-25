@@ -30,14 +30,8 @@ header {
     margin-top: 30px;
 }
 
-.content {
-    /* background-color: aliceblue; */
-    max-width: 1080px;
-    padding: 40px 40px 10px;
-}
-
 .logo{
-    width: 8%;
+    width: 131px;
     position: absolute;
 }
 
@@ -57,17 +51,28 @@ nav li {
     font-size: 20px;
 }
 
-li a {
+nav li a {
     color: #fff;
     transition: color 0.3s ease-in-out;
+    border-bottom: #e75022 solid 3px;
+    border-bottom-width: 0px;
 }
 
-li a:visited {
+nav li a:visited {
     color: #000;
 }
 
-li a:hover {
+nav li a:hover {
     color: #fff;
+    border-bottom: #e75022 solid 3px;
+    border-bottom-width: 5px;
+    transition: border-width 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.content {
+    /* background-color: aliceblue; */
+    max-width: 1080px;
+    padding: 40px 40px 10px;
 }
 
 #titulo-da-pagina{
